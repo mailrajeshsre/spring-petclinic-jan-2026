@@ -1,6 +1,7 @@
 FROM eclipse-temurin:17-jre-alpine 
 LABEL project="learning"
 LABEL author="Rajesh"
-ADD target/spring-petclinic-4.0.0-SNAPSHOT.jar /spring-petclinic-4.0.0-SNAPSHOT.jar
+WORKDIR /usr/share/spc
+ADD target/spring-petclinic-4.0.0-SNAPSHOT.jar /usr/share/spc/spring-petclinic-4.0.0-SNAPSHOT.jar
 EXPOSE 8080/tcp
-CMD ["java", "-jar", "/spring-petclinic-4.0.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/usr/share/spc/spring-petclinic-4.0.0-SNAPSHOT.jar"]
