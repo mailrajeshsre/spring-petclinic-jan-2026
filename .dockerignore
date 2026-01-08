@@ -1,0 +1,79 @@
+.git/
+.git*
+k8s/
+target/
+**/Dockerfile
+**/docker-compose.yml
+
+
+# Git
+.git
+.gitignore
+
+# IDEs
+.idea
+.vscode
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+log/
+
+# Build output (handled by Docker build)
+target/
+build/
+out/
+
+# Temporary files
+tmp/
+temp/
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Test & coverage reports
+**/surefire-reports/
+**/failsafe-reports/
+**/jacoco/
+**/coverage/
+
+# Node (if frontend exists)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+# Docker files not needed in image
+docker-compose.yml
+docker-compose*.yml
+
+# CI/CD configs
+.github/
+.gitlab/
+.gitlab-ci.yml
+.circleci/
+
+# Documentation
+README.md
+docs/
+
